@@ -41,12 +41,13 @@ BiocManager::install(c("affy", "GEOquery", "oligo", "biomaRt", "limma", "org.Hs.
 
 ### Data Preparation  
 
-- **CEL Files**: Organize CEL files for each platform in their respective `./data` directories (or `./data1`, `./data2`, `./data3` for GPL17586).  
+- **CEL Files**: Organize CEL files for each platform in their respective `./data` directories.  
 - **Subtype Metadata**: Prepare CSV files named as using respective get_Filename_and_Subtype_Table_GPLnnnn scripts:  
-  - `Filename_with_Subtype_GPL16686.csv`  
+  - `get_Filename_and_Subtype_Table_GPL17586`  
   - `Filename_with_Subtype_GPL570.csv`  
-  - `Filename_with_Subtype_GPL17586.csv`  
-
+  - `Filename_with_Subtype_GPL17586.csv`
+- Make sure that the filename of CEL files in the ./data folder matches exactly with `get_Filename_and_Subtype_Table_GPLnnnn` CSV file.
+ 
 ### Running the Pipeline  
 
 1. Clone this repository:  
